@@ -13,7 +13,7 @@ func main() {
 	var staticDir, passwordFile, listenPort string
 	flag.StringVar(&staticDir, "static-dir", "", "The directory containing static files to be served.")
 	flag.StringVar(&passwordFile, "password-file", "", "The path to password file.")
-  flag.StringVar(&listenPort, "p", ":8080", "The listening port.")
+	flag.StringVar(&listenPort, "p", ":8080", "The listening port.")
 	flag.Parse()
 	if len(staticDir) == 0 {
 		log.Fatalf("static-dir must be provided")
